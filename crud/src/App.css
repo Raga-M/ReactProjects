@@ -1,0 +1,72 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+  body{
+    font-family: 'Roboto', sans-serif;
+  }
+
+  ::-webkit-scrollbar{
+  height:10px;
+  width: 10px;
+  }
+  ::-webkit-scrollbar-thumb{
+  background-color: #40c8f6;
+  }
+  ::-webkit-scrollbar-track{
+  background-color: #222;}
+.success{
+background-color: rgb(101, 242, 103);
+}
+.warning{
+background-color: #f7ed39;
+}
+
+.danger{
+background: rgb(238, 82, 82);
+}
+
+.position{
+position: fixed;
+top:2%;
+left: 50%;
+transform: translatex(-50%);
+}
+.edit,.delete{
+  width: 30px;
+  height: 30px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: -1px -1px 2px 0px rgba(195, 195, 195, 0.50), 1px 1px 2px 0px #2B5E6C;
+transition: all .5s ease-in;
+}
+.bg-edit{
+
+  background: #40c8f6;}
+.bg-del{
+
+  background-color: #FE5858;
+}
+.edit:hover,.delete:hover{
+box-shadow: -1px -1px 2px 0px rgba(195, 195, 195, 0.50) inset, 1px 1px 2px 0px #2B5E6C inset;}
+
+.costum-striped tbody tr:nth-of-type(odd){
+background-color: #f1f1f177;
+}
+table td{
+font-size: 14px;
+font-weight: 500;
+color: rgba(83, 83, 83, 0.921);
+text-align: left !important;
+}
+.bottom-colr-border{
+border-top: 0px;
+border-left: 0px;
+border-right: 0px;
+border-bottom: 10px;
+border-color: #40c8f6;
+border-style: solid;
+}
