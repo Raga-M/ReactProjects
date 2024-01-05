@@ -15,46 +15,44 @@ export default function Thirukkural() {
     setCount(c);
   }
 
+
   useEffect(() => {
     console.log("render");
 
     async function fetchData() {
       const response = await fetch(
-        `https://api-thirukkural.vercel.app/api?num=${count}`
-      ).catch((err) => console.log(err));
+`https://getthirukkural.appspot.com/api/3.0/kural/${count}?appid=i0xlh180dwbhy`
+      ).catch((err) => setKural(err.message));
       const res = await response.json();
       setKural(res);
     }
 
     fetchData();
   }, [count]);
-
+console.log(kural)
   return (
-    <div className="container">
-      <h1> திருக்குறள் </h1>
-      {console.log(kural)}
+    <>
+     <div className="container">
+     <h1> திருக்குறள் </h1>
+       {console.log(kural)}
 
       <pre>
         {" "}
-        குறள்:{kural?.number} <span>பால்:{kural?.sect_tam}</span>
+        குறள்:{kural?.number} <span>பால்:{kural?.paal}</span>
       </pre>
       <p className="tamil">{kural?.line1}</p>
       <p className="tamil">{kural?.line2}</p>
       <h1>விளக்கம்</h1>
-      <p className="explain tamil">{kural?.tam_exp}</p>
 
-      <h1>English</h1>
-      <pre>
-        {" "}
-        Number:{kural?.number} <span>Section:{kural?.sect_eng}</span>
-      </pre>
-      <p>{kural?.eng}</p>
-      <h1>Explaination</h1>
-      <p className="explain">{kural?.eng_exp}</p>
-
+<p className="explain tamil">
+  {kural?.urai1}
+</p>
+<h1>English</h1>
+<p className="explain">{kural?.translation}</p>
       <button className="btn" onClick={change}>
         அடுத்தது/Next
       </button>
-    </div>
+     </div>
+</>
   );
 }
