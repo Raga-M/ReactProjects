@@ -1,0 +1,36 @@
+.App{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+.clock{
+  color: rgb(23, 237, 12);
+  background-color: rgba(24, 21, 21,0.9);
+padding: 20px;
+height: 300px;
+width: 300px;
+border: 20px inset rgb(0, 0, 0);
+border-radius: 50%;
+line-height: 300px;
+text-align: center;
+animation: border  2s infinite;
+}
+.bold{
+font-weight: bold;
+font-size: 12px !important;
+}
+
+@keyframes border{
+from{
+  border: 20px outset rgb(0, 0, 0);
+
+}
+to{
+  border: 20px inset rgb(0, 0, 0);
+
+}
+}
+span{
+font-size: 50px;
+font-weight: bold;}
