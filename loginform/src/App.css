@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  /* padding: 0;
+  margin: 0; */
+}
+
+body {
+background-color: #FBDA61;
+background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+overflow: hidden;
+}
+.App {
+  /* background-color: red; */
+  height: 100vh;
+  /* width: 100vw; */
+  display: flex;
+  justify-content: center;
+  margin: 2% auto;
+  /* align-items: center; */
+
+}
+.form {
+  background-color: white;
+  height: 90vh;
+  width: 30vw;
+  padding: 5% 3%;
+  border-radius: 0  5px 5px 0;
+  box-shadow:0 0 40px rgba(0,0,0,0.4) ;
+}
+.image img {
+  width: 25vw;
+  height: 90vh;
+  object-fit: cover;
+  border-radius: 5px 0 0 5px;
+  box-shadow:0 0 40px rgba(0,0,0,0.4) ;
+}
+.heading {
+  text-align: center;
+}
+p {
+  color: grey;
+  text-align: center;
+  font-size: small;
+}
+input,
+button {
+  width: 100%;
+  padding: 3%;
+  margin: 2%;
+  border: 1px solid rgb(161, 161, 161);
+  border-radius: 5px;
+}
+input[type="submit"] {
+  background-color: rgb(3, 107, 211);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+input[type="submit"]:hover{
+  background-color: rgb(4, 62, 120);
+}
+
+button {
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.5s ease;
+}
+button:hover{
+background-color: rgb(192, 190, 190);}
+.password,
+.mail {
+  position: relative;
+}
+.fa-lock,
+.fa-envelope {
+  position: absolute;
+  right: 5px;
+  top: 15px;
+  cursor: pointer;
+  color: gray;
+  transition: 0.5s ease;
+}
+.fa-lock:hover,
+.fa-envelope:hover{
+color: black;
+}
+a {
+  text-decoration: none;
+}
+@media screen and (min-width: 200px) and (max-width: 800px) {
+  .App {
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .form {
+    width: 90%;
+    height: auto;
+    margin-top: 0;
+    padding: 5% 10%;
+    border-radius:  0 0 5px 5px ;
+ 
+  }
+  .image img {
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    margin-bottom: 0;
+    border-radius:  5px 5px 0 0;
+
+  }
+}
