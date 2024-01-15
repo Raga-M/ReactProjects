@@ -5,5 +5,5 @@ export default function States (){
    const name=useContext(CreateNewContext)
     return(
         <>
-        <p>{name}</p>
+        <p>{name.lang}</p>
         </>)}
