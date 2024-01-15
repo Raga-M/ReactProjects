@@ -4,7 +4,10 @@ import CreateNewContext from './component/CreateNewContext';
 import States from './component/states';
 
 function App() {
-  let val="javascript"
+  let val={
+    lang:"javascript ", 
+    uses:" frontend & backend"
+  }
   return (
     <div className="App">
       <CreateNewContext.Provider value={val} >
