@@ -9,7 +9,7 @@ return(
     </div>
      {/* left side form */}
     <form className="form">
-        <h1 className='heading'>Explore</h1>
+        <h1 className='heading'>Explore Us</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, nobis.</p>
         <div className='mail'>
             <input type="email" placeholder='Email'/>
